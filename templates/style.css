@@ -1,0 +1,98 @@
+{$customFontDeclarations}
+
+h1, h2{
+	font-size: {$sizeTitle}px;
+}
+h1, h2, h3, h4, h5, h6{
+	line-height: 0;
+	font-family: {$fontTitle};
+	color: {$colorTitle};
+	text-align: center;
+	font-variant: small-caps;
+}
+hr{
+	color: {$colorTitle};
+	size: 3px;
+}
+li{
+	font-family: {$fontItem};
+	font-size: {$sizeItem}px;
+	color: {$colorItem};
+	list-style-type: square;
+}
+body{
+	font-family: {$fontContent};
+	font-size: {$sizeContent}px;
+	color: {$colorContent};
+	background-color: {$colorAccentuation2};
+}
+a,a:link,a:visited{
+	text-decoration: underline;
+	color: inherit;
+	cursor: pointer!important;
+}
+a:hover,a:active{
+	text-decoration: underline;
+	color: {$colorAccentuation2};
+}
+::selection {
+	background: {$colorAccentuation1};
+	color: {$colorAccentuation2};
+}
+footer{
+	background-color: {$colorAccentuation2};
+	width: 100%;
+	padding-top:20px;
+}
+#footerContent{
+	text-align: center;
+}
+.container{
+	width: 100%;
+}
+.navbar-default{
+	background-color: {$colorAccentuation2};
+	border: none;
+}
+section{
+	background-color: {$colorAccentuation1};
+}
+.navbar-default .navbar-collapse{
+	border-color: black;
+}
+.socialLogo{
+	width: 100%;
+	height: 100%;
+}
+section{
+	padding-bottom: 20px;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover,
+.navbar-nav .open .dropdown-menu:focus,
+.navbar-nav .open .dropdown-menu:hover,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover{
+	background-color: {$colorAccentuation1}
+}
+.navbar-default .navbar-nav>.active>a{
+	background-color: blue;
+}
+
+.dropdown-menu,
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover{
+	background-color: {$colorAccentuation2};
+}
+.sidebar{
+	padding: 0;
+}
+.widget>*>*{
+	width: 100%;
+}

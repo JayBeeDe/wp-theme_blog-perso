@@ -1,0 +1,22 @@
+body{
+  background-image: url("{bloginfo('template_directory')}/img/404.gif");
+  background-repeat: repeat;
+}
+body,html{
+  overflow: hidden;
+}
+#container{
+  border: solid {$bgaccentuation1} 1px;
+  overflow-y: auto;
+  z-index: 3;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  opacity: {$backgroundOpacity};
+  background-color: {$backgroundColor};
+  margin-top: 15px;
+}
+#content{
+  z-index: 4;
+  opacity: 1;
+}

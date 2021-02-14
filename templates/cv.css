@@ -1,0 +1,69 @@
+body{
+  background: url("{$backgroundPath}") no-repeat center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body,html{
+  overflow: hidden;
+}
+.content{
+  text-shadow: {$backgroundColor} 1px 1px, {$backgroundColor} -1px 1px, {$backgroundColor} -1px -1px, {$backgroundColor} 1px -1px;
+}
+.content h1{
+  text-shadow: {$colorAccentuation2} 1px 1px, {$colorAccentuation2} -1px 1px, {$colorAccentuation2} -1px -1px, {$colorAccentuation2} 1px -1px;
+}
+#container,#svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80%;
+  width: 90%;
+  margin: 5%;
+  border: solid {$backgroundColor} 1px;
+}
+#container{
+  overflow-y: auto;
+  z-index: 3;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#container, ul li{
+  color: white;
+}
+.content, li, li > li{
+  font-size: {$sizeContent}px;
+}
+li i, li > li i{
+  font-size: {$sizeItem}px;
+}
+li p{
+  line-height: 1;
+}
+i a{
+  text-decoration: none!important;
+}
+#svg{
+  z-index: 2;
+}
+/*this is useless for ie and edge*/
+.zeroZoom{
+  x: 0;
+  y: 0;
+  width: 100%;
+  height: 100%;
+}
+.zoom1{
+  x: -5%;
+  y: -5%;
+  width: 110%;
+  height: 110%;
+}
+/*end useless for ie and edge*/
+#rect{
+  fill: url('#img1');
+  filter: url('#gauss');
+  fill-opacity: {$backgroundOpacity};
+}

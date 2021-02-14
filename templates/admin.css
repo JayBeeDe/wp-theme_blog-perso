@@ -1,0 +1,17 @@
+body {
+    background: url("{$backgroundPath}") no-repeat center center fixed !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+}
+
+#login h1 a,
+.login h1 a {
+    background-image: url("{$loginLogoPath}");
+    padding-bottom: 30px;
+}
+
+#loginform {
+    background-color: rgba(255, 255, 255, 0.8);
+}
