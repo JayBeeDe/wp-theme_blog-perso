@@ -1,6 +1,6 @@
 		<?php
         echo "This is the page.php file for wordpress pages";
-        
+
         ?>
 		This is the page page
 		<div id="content">

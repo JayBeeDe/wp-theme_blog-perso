@@ -32,9 +32,9 @@ $oddcomment = 'alt';
 
 <div class="commentmetadata">
 <strong><?php comment_author_link() ?></strong>, <?php _e('le'); ?> <a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('j F, Y') ?> <?php _e('&agrave;');?> <?php comment_time() ?></a> <?php _e('Said&#58;'); ?> <?php edit_comment_link('Edit Comment', '', ''); ?>
- 		<?php if ($comment->comment_approved == '0') : ?>
+		<?php if ($comment->comment_approved == '0') : ?>
 		<em><?php _e('Votre commentaire est en cours de mod&eacute;ration'); ?></em>
- 		<?php endif; ?>
+		<?php endif; ?>
 </div>
 
 <?php comment_text() ?>

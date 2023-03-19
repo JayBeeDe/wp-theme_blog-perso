@@ -33,7 +33,7 @@ a,a:link,a:visited{
 }
 a:hover,a:active{
 	text-decoration: underline;
-	color: {$colorAccentuation2};	
+	color: {$colorAccentuation2};
 }
 ::selection {
 	background: {$colorAccentuation1};
